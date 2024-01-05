@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>block manipulation</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="block">
+            <h3 class="block-heading">Position-Y</h3>
+            <div class="wrapper vertical">
+                <input type="range" id="pos-y" min="0" max="600"  value="0">
+                <label for="pos-y">
+                    <span>0</span>
+                    <span>600</span>
+                </label>
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Position-X</h3>
+            <div class="wrapper horizontal">
+                <label for="pos-x">
+                    <span>0</span>
+                    <span>800</span>
+                </label>
+                <input type="range" id="pos-x" min="0" max="800" value="0">
+               
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">size</h3>
+            <div class="wrapper horizontal">
+                <label for="size-id">
+                    <span>0</span>
+                    <span>2</span>
+                </label>
+                <input type="range" id="size-id" min="0" max="2" step="0.1">
+                
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Opacity</h3>
+            <div class="wrapper horizontal">
+                <label for="opacity-id">
+                    <span>0</span>
+                    <span>1</span>
+                </label>
+                <input type="range" id="opacity-id" min="0" max="1" step="0.1">
+                
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Shape Type</h3>
+            <div class="wrapper center">
+                <select id="shape-id">
+                    <option value="1">square</option>
+                    <option value="2">circle</option>
+                    <option value="3">rhombus</option>
+                    
+                </select>
+                <button id="ok-id">ok</button>
+
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Hex</h3>
+            <div class="wrapper colour">
+                <label for="hex-id">#</label>
+                <input type="text" id="hex-id">
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="block-heading">Rgba</h3>
+            <div class="wrapper rgba-block">
+                <input type="range" id="r" min="0" max="225" value="225"><label for="r">r</label>
+                <input type="range" id="g" min="0" max="225" value="0"><label for="g">g</label>
+                <input type="range" id="b" min="0" max="225" value="0"><label for="b">b</label>
+                <input type="range" id="a" step="0.01"  min="0" max="225" value="225"><label for="a">a</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="block"></div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
